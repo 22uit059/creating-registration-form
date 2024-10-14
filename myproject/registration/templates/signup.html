@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>signup</title>
+    <style>    body{
+      background-color:pink;
+    }
+    </style>
+  </head>
+  <body><center>
+    <h1>Kamaraj college of engineeing and technology</h1>
+    <h3>Web application using Django framework</h3>
+    <h4>K. SANTHIYA, 22UIT059</h4>
+      <h1>Registration From</h1>
+      
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Sign up" />
+    </form>
+  </center></body>
+</html>
